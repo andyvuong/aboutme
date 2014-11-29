@@ -1,0 +1,83 @@
+.valign-middle {
+    height: 100%;
+    margin: 0 auto;
+    display: table; /* Vertical align */   
+}
+
+.valign-middle .columns {
+    height: 100%;
+    padding: 0 24px;
+    display: table-cell; /* Vertical align */
+    vertical-align: middle; /* Vertical align */
+}
+
+/*
+Just Some colors:
+#F2502C, #CS4231, #EB5240, #AD5758, #825B60, #46626D, #BBBEAD
+#A43F13, #AD8A39, #A1BDA6, #638398, #37678B
+*/
+body {
+    background: #222;  
+}
+
+::selection {
+	background: #908cba;
+}
+
+#main-container {
+    height: 100%;
+    margin: 0 auto;
+    display: table; /* Vertical align */   
+}
+
+#container {
+    height: 100%;
+    padding: 0 24px;
+    display: table-cell; /* Vertical align */
+    vertical-align: middle; /* Vertical align */
+}
+
+#main-header {
+    font-size: 5em;
+    text-align: center;
+    font-family: Montserrat, serif;
+    color: #FFF;
+}
+
+#vanity-subtext {
+    font-size: 2.00em;
+    text-align: center;
+    font-family: Maven Pro, sans-serif;
+    font-style: oblique;
+    color: 	#777;
+}
+
+.nav-back {
+    background: #222;  
+}
+
+.nav-text {
+    color: #222;
+}
+
+.text {
+    font-family: Maven Pro, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.link {
+    font-size: 1.2em;
+    font-family: Maven Pro, sans-serif;
+    text-align: center;   
+}
+
+.link-contact {
+    font-size: 1.05em;
+    font-family: Maven Pro, sans-serif;
+    text-align: center;
+    color: #777
+}
+.size-2 {
+    font-size: 1.5em; 
+}
