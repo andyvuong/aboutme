@@ -16,12 +16,27 @@ Just Some colors:
 #F2502C, #CS4231, #EB5240, #AD5758, #825B60, #46626D, #BBBEAD
 #A43F13, #AD8A39, #A1BDA6, #638398, #37678B
 */
+
 body {
-    background: #222;  
+    background: #222; 
+}
+
+footer {
+    margin-bottom: 1%;
 }
 
 ::selection {
 	background: #908cba;
+}
+
+.section {
+    max-height: 90%;
+    min-height: 90%;
+}
+
+.section-half {
+    min-height: 50%;
+    max-height: 50%;
 }
 
 #main-container {
@@ -40,7 +55,7 @@ body {
 #main-header {
     font-size: 5em;
     text-align: center;
-    font-family: Montserrat, serif;
+    font-family: PT-Mono, Montserrat, serif;
     color: #FFF;
 }
 
@@ -56,14 +71,20 @@ body {
     background: #222;  
 }
 
-.nav-text {
-    color: #222;
+.light-text {
+    opacity: 0.5;
+    color: #777;
 }
 
 .text {
     font-family: Maven Pro, sans-serif;
     color: white;
-    text-align: center;
+}
+
+.greet {
+    font-size: 2.00em;
+    font-family: Maven Pro, sans-serif;
+    color: white;
 }
 
 .link {
@@ -78,6 +99,109 @@ body {
     text-align: center;
     color: #777
 }
+
 .size-2 {
     font-size: 1.5em; 
+}
+
+.custom-center {
+    text-align: center;
+}
+
+.title-bar {
+    overflow: hidden;
+    height: 75px;
+    line-height: 65px;
+    position: relative;
+    background: #222;
+    margin-bottom: 0; 
+}
+
+.title-header {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+    color: #908cba;
+}
+
+.up-arrow {
+    display:block;
+	position: relative;
+    content: "";
+    height:0;
+    width:0;
+    padding:0;
+    margin:-8px;
+    border:8px solid transparent;
+    border-bottom-color:#CCC;
+    border-top-color:transparent;
+}
+
+.down {
+    width: 0;
+    height: 0;
+    opacity: 0.15;
+    border-style: solid;
+    border-width: 50px 50px 0 50px;
+    border-color: #777 transparent transparent transparent;
+}
+
+.up {
+    width: 0; 
+	height: 0; 
+    opacity: 0.2;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid #777;
+}
+
+.down:hover {
+    opacity: 0.2;
+}
+
+.min-10 {
+    min-height: 10%;
+    max-height: 10%;
+}
+
+.min-90 {
+    min-height: 90%;
+    max-height: 90%;
+}
+
+#profile {
+	margin: 15%;
+    border-radius: 50%;	
+	border: 1px solid black;
+	box-shadow: 0 0 1em black;
+}
+
+.contenta {
+    width: 55%;
+}
+
+.content-box-desc {
+    color: #FFF;   
+}
+
+.c1 .content-box {
+}
+
+.c1 {
+}
+
+.c1:hover {
+    
+}
+
+.c2 {
+}
+
+.c2:hover {
+}
+
+.bot {
+    display: none;
+	position: fixed;
+    right:3%;
+    bottom:4%;
 }

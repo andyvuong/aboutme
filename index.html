@@ -19,58 +19,104 @@
         <title>Andy Vuong</title>
     </head>
     <body>
-        <nav class="top-bar nav-back" data-topbar role="navigation">
-
-            
-        </nav>
-        <div class="row">
-            <div class="valign-middle">
-                <div class="columns">
-                    <h2 id="main-header" class="animated fadeInDown">Andy Vuong</h2>
-                    <p id="vanity-subtext" class="animated fadeInDown">Developer, Researcher, Engineer</p>
+        <div class="welcome">
+            <div class="row">
+                <div class="valign-middle">
+                    <div class="columns">
+                        <h2 id="main-header" class="animated fadeInDown">Andy Vuong</h2>
+                        <p id="vanity-subtext" class="animated fadeInDown">Developer, Researcher, Engineer</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="valign-middle">
-                <div class="column">
-                    <ul class="inline-list link">
-                        <li><a class="link animated zoomIn">Projects</a></li>
-                        <li><a class="link animated zoomIn">About Me</a></li>
-                        <li><a class="link animated zoomIn">Resume</a></li>
-                        <li><a class="link animated zoomIn">Blog Posts</a></li>
-                    </ul>
+            <div class="row">
+                <div class="valign-middle">
+                    <div class="column">
+                        <ul class="inline-list link">
+                            <li><a class="link animated zoomIn">Projects</a></li>
+                            <li><a class="link animated zoomIn">Blog Posts</a></li>
+                            <li><a href="resume.pdf" class="link animated zoomIn">Resume</a></li>
+                            <li><a class="link animated zoomIn">About Me</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="row animated zoomIn">
-            <div class="valign-middle">
-                <div class="column">
-                    <p class="text">Welcome to my personal website. Here you'll find my projects, resume, and other important pieces of information about me.</p>
+            <div class="row animated zoomIn">
+                <div class="valign-middle">
+                    <div class="column">
+                        <p class="text custom-center">Welcome to my personal website. Here you'll find my projects, resume, and other important pieces of information about me.</p>
+                    </div>
                 </div>
             </div>
-        </div>
             <div class="valign-middle">
                 <div class="column">
                     <div class="icon-bar three-up nav-back">
-                      <a class="item">
+                      <a href="https://github.com/andyvuong" class="item animated fadeInUp">
                         <i class="fa fa-github fa-2x"></i>
                         <label class="link-contact">Github</label>
                       </a>
-                      <a class="item">
+                      <a href="https://linkedin.com/in/vuongandy" class="item animated fadeInUp">
                           <i class="fa fa-linkedin-square fa-2x"></i>
                         <label class="link-contact">LinkedIn</label>
                       </a>
-                      <a class="item">
+                      <a href="mailto:andy@andyvuong.me" class="item animated fadeInUp" title="andy@andyvuong.me">
                           <i class="fa fa-envelope-o fa-2x"></i>
                         <label class="link-contact">Email</label>
                       </a>
                     </div>
                 </div>
             </div>
-        
+        </div> <!-- End Front Page -->
+        <div class="section">
+            <div class="row title-bar custom-center">
+                <ul class="title-area">
+                    <h1 class="title-header">Projects</h1>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <p>The following are projects I have worked on.</p>                  
+                </div>
+            </div>
+        </div> <!-- End Project Page -->
+        <div class="section-half">
+            <div class="row title-bar custom-center">
+                <ul class="title-area">
+                    <h1 class="title-header">About Me</h1>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="small-2 columns">
+                    <p>a</p>
+                </div>
+                <div class="small-6 columns">
+                   <h1 class="row greet">Hello.</h1>  
+                    <p class="row text">I am an undergraduate student studying computer science at the University of Illinois at Urbana-Champaign. I really enjoy building things, especially when it relates to problem solving and engineering solutions. As such, I'm an avid hackathon attendee and I work on a lot of different projects on my spare time. My interests lie in human-computer interaction, machine learning, data science, and aerospace.</p>
+                    <p></p><p class="row text">Want to talk? Send me an email.</p>
+                </div> 
+                <div class="small-4 columns">
+                    <div>
+                        <img id="profile" src="assets/prof.jpg" alt="profile">
+                    </div>
+                </div>                        
+            </div>
+        </div> <!-- End About Me Page -->
+        <div class="section">
+            <div class="row title-bar custom-center">
+                <ul class="title-area">
+                    <h1 class="title-header">Blog Posts</h1>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <p>The following</p>                  
+                </div>
+            </div>
+        </div> <!-- End Blog Posts Page -->
+        <footer>
+        </footer>
         <!-- Scripts Start-->
         <script src="js/jquery.js"></script>
+        <script src="js/waypoints.min.js"></script>
         <script src="js/modernizr.js"></script>
         <script src="js/foundation.min.js"></script>
         <!-- End Scripts -->
