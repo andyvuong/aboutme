@@ -21,8 +21,10 @@ body {
     background: #222; 
 }
 
-footer {
-    margin-bottom: 1%;
+#foot {
+    height: 100%;
+    margin: 0 auto;
+    display: table; /* Vertical align */    
 }
 
 ::selection {
@@ -131,7 +133,7 @@ footer {
     width:0;
     padding:0;
     margin:-8px;
-    border:8px solid transparent;
+    border:16px solid transparent;
     border-bottom-color:#CCC;
     border-top-color:transparent;
 }
@@ -145,17 +147,13 @@ footer {
     border-color: #777 transparent transparent transparent;
 }
 
-.up {
-    width: 0; 
-	height: 0; 
-    opacity: 0.2;
-	border-left: 20px solid transparent;
-	border-right: 20px solid transparent;
-	border-bottom: 20px solid #777;
-}
-
 .down:hover {
     opacity: 0.2;
+}
+
+.min-5 {
+    min-height: 5%;
+    max-height: 5%;
 }
 
 .min-10 {
