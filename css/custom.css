@@ -1,49 +1,5 @@
-.valign-middle {
-    height: 100%;
-    margin: 0 auto;
-    display: table; /* Vertical align */   
-}
-
-.valign-middle .columns {
-    height: 100%;
-    padding: 0 24px;
-    display: table-cell; /* Vertical align */
-    vertical-align: middle; /* Vertical align */
-}
-
-/*
-Just Some colors:
-#F2502C, #CS4231, #EB5240, #AD5758, #825B60, #46626D, #BBBEAD
-#A43F13, #AD8A39, #A1BDA6, #638398, #37678B
-*/
-
 body {
     background: #222; 
-}
-
-#foot {
-    height: 100%;
-    margin: 0 auto;
-    display: table; /* Vertical align */    
-}
-
-::selection {
-	background: #908cba;
-}
-
-.section {
-    max-height: 90%;
-    min-height: 90%;
-}
-
-.section-adj {
-    max-height: 50%;
-    min-height: 50%;
-}
-
-.section-half {
-    min-height: 50%;
-    max-height: 50%;
 }
 
 #main-container {
@@ -74,18 +30,62 @@ body {
     color: 	#777;
 }
 
+#profile {
+	margin: 15%;
+    border-radius: 50%;	
+	border: 1px solid black;
+	box-shadow: 0 0 1em black;
+}
+
+.img-container {
+    height:75%;
+    width:75%;
+	margin: 5%;
+	border: 1px solid black;
+	box-shadow: 0 0 1em black;
+
+}
+
+::selection {
+	background: #908cba;
+}
+
+.valign-middle {
+    height: 100%;
+    margin: 0 auto;
+    display: table; /* Vertical align */   
+}
+
+.valign-middle .columns {
+    height: 100%;
+    padding: 0 24px;
+    display: table-cell; /* Vertical align */
+    vertical-align: middle; /* Vertical align */
+}
+
+.section {
+    max-height: 90%;
+    min-height: 90%;
+}
+
+.section-adj {
+    max-height: 50%;
+    min-height: 50%;
+}
+
+.section-half {
+    min-height: 50%;
+    max-height: 50%;
+}
+
+.post-section {
+    margin-top: 1%;
+    max-height: 90%;
+    min-height: 90%;
+}
+
 .nav-back {
     background: #222;  
-}
-
-.light-text {
-    opacity: 0.5;
-    color: #777;
-}
-
-.text {
-    font-family: Maven Pro, sans-serif;
-    color: white;
 }
 
 .greet {
@@ -113,6 +113,10 @@ body {
 
 .custom-center {
     text-align: center;
+}
+
+.cust-cen {
+    margin-left: 25%;
 }
 
 .title-bar {
@@ -156,6 +160,13 @@ body {
     opacity: 0.2;
 }
 
+.bot {
+    display: none;
+	position: fixed;
+    right:3%;
+    bottom:4%;
+}
+
 .min-5 {
     min-height: 5%;
     max-height: 5%;
@@ -171,13 +182,6 @@ body {
     max-height: 90%;
 }
 
-#profile {
-	margin: 15%;
-    border-radius: 50%;	
-	border: 1px solid black;
-	box-shadow: 0 0 1em black;
-}
-
 .contenta {
     width: 55%;
 }
@@ -186,29 +190,21 @@ body {
     color: #FFF;   
 }
 
-.c1 .content-box {
+.side-nav {
+  position: fixed;
 }
 
-.c1 {
+.mini-header-purple {
+    font-family: Montserrat, sans-serif;
+    color: #908cba;
 }
 
-.c1:hover {
-    
+.light-text {
+    opacity: 0.5;
+    color: #777;
 }
 
-.c2 {
-}
-
-.c2:hover {
-}
-
-.bot {
-    display: none;
-	position: fixed;
-    right:3%;
-    bottom:4%;
-}
-
-.cust-cen {
-    margin-left: 25%;
+.text {
+    font-family: Maven Pro, sans-serif;
+    color: white;
 }
