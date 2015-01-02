@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="Simple Git Workflow"/>
+		<meta property="og:title" content="Simple Git Workflow"/>
+		<meta property="og:site_name" content="andyvuong"/>
+		<meta property="og:url" content="http://www.andyvuong.me/git-workflow"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:description" content="Simple Git Workflow"/>
+        
+        <link rel="stylesheet" href="../css/animate.css"/>
+        <link rel="stylesheet" href="../css/foundation.css"/>
+        <link rel="stylesheet" href="../css/custom.css"/>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro|PT+Mono' rel='stylesheet' type='text/css'>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Simple Git Workflow | Andy Vuong</title>
+    </head>
+    <body>
+        <div class="post-section">
+            <div class="row">
+                <div class="small-3 columns">
+                    <ul class="side-nav">
+                        <li data-magellan-arrival="list"><a href="things-i-find-useful.html">Back to Things I Find Useful</a></li>
+                        <li data-magellan-arrival="home"><a href="http://andyvuong.me">Home</a></li>
+                        <li data-magellan-arrival="blog"><a href="http://andyvuong.me#blog">Blog Posts</a></li>
+                    </ul>
+                </div>
+                <div class="small-9 columns">
+                    <h1 class="post-title">Git Workflow</h1>
+                    <p class="date-text">Andy Vuong | Copyright 2015</p>
+                    <p class="text">
+                    This document is a quick guide to getting started with git and github project
+                    collaboration by introducing simple but quick workflows you can use to easily
+                    work with others in a central repository. Note: This is not a complete guide
+                    to using Git. Have any further questions? Check out some online Git resources
+                    or Google it!
+                    </p>
+                    <h3 class="mini-header-purple">WORKFLOWS</h3>
+                    <ul>
+                        <li><a href="#one">1. Collaborate on an existing project</a></li>
+                        <li><a href="#two">2. Collaborate using branches</a></li>
+                    </ul>
+                    <br>
+                    <h5 id="one" class="mini-header-purple">Collaborate on an existing project</h5>
+                    <ul>
+                        <li>
+                            <p class="text">
+                            1. 	Clone the project to your working directory. You now have a copy of the repo
+                            and can push changes to it that will be available to all your team members.
+                            </p>
+                            <h5 class="cmd-text">Use: git clone [repo_location.git]</h5>
+                            <h5 class="cmd-text">Example: git clone https://github.com/user/project.git</h5>
+                        </li>
+                        <li>
+                            <p class="text">
+                            2.  Add files to be commited to the main repository.
+                            </p>
+                            <h5 class="cmd-text">Use: git add [filename]</h5>
+                            <h5 class="cmd-text">Example: git add code.c</h5>
+                        </li>
+                        <li>
+                            <p class="text">
+                            3.  Use git commit to commit your code. Using <span class="cmd-text">git commit .</span> - will commit all added files.
+                            </p>
+                            <h5 class="cmd-text">Use: git commit [filename]</h5>
+                            <h5 class="cmd-text">Example git commit .</h5>
+                        </li>
+                        <li>
+                            <p class="text">
+                            4.  Publish changes to the central repository so otehrs may access the changes.
+                            </p>
+                            <h5 class="cmd-text">Use: git push origin master</h5>
+                            <h5 class="light-text">Note: 	origin is a shortcut for your clone of the repo and master is a shortcut to the central repo.</h5>
+                        </li>
+                        <li>
+                            <p class="text">
+                            5.  If someone else has published their changes to the central repo, your local 
+                            copy is now outdated so you'll be unable to push your own changes. You'll 
+                            need to use git pull to grab the updates from the central repo and then 
+                            integrate changes you made before publishing.
+                            </p>
+                            <h5 class="cmd-text">Use: git pull --rebase origin master</h5>
+                        </li>
+                    </ul>
+                    <br>
+                    <h5 id="two" class="mini-header-purple">Collaborate using branches</h5>
+                    <p class="text">more coming soon...</p>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts Start-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="../js/modernizr.js"></script>
+        <script src="../js/foundation.min.js"></script>
+        <script src="../js/custom.js"></script>
+        <!-- End Scripts -->
+    </body>
+</html>
