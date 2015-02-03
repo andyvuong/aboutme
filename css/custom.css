@@ -121,13 +121,14 @@ body {
 .title-bar {
     overflow: hidden;
     height: 75px;
-    line-height: 65px;
+    line-height: 75px;
     position: relative;
     background: #222;
     margin-bottom: 0; 
 }
 
 .title-header {
+    font-size: 3.4em;
     font-family: Montserrat, sans-serif;
     text-align: center;
     color: #908cba;
