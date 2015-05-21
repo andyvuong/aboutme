@@ -9,178 +9,156 @@
         <meta property="og:url" content="http://www.andyvuong.me"/>
         <meta property="og:type" content="website"/>
         <meta property="og:description" content="Aspiring software engineer and computer scientist at UIUC."/>
-        <link rel="stylesheet" href="css/foundation.css"/>
-        <link rel="stylesheet" href="css/animate.css"/>
         <link rel="stylesheet" href="css/custom.css"/>
         <link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro|PT+Mono' rel='stylesheet' type='text/css'>
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
         <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
         <title>Andy Vuong</title>
     </head>
     <body>
-        <div id="main-container" class="section min-90">
-            <div id="container">
-                <div class="row">
-                    <div class="valign-middle">
-                        <h2 id="main-header" class="animated fadeInDown">Andy Vuong</h2>
-                        <p id="vanity-subtext" class="animated fadeInDown">Aspiring software engineer and scientist</p>
+        <div class="container-fluid section">
+          <div class="row row-ext no-gutter">
+            <!-- Left -->
+            <div class="col-md-4 c1 col-ext">
+                <div class="section-header section-font-pri">Andy Vuong</div>
+                <div class="about-content">
+                    <img id="profile" src="assets/prof.jpg" alt="profile" width="130px" height="188px" />
+                    <div class="about-text">
+                        <h3>Welcome!</h3>
+                        <p>I am an undergraduate student studying computer science at the University of Illinois at Urbana-Champaign. I really enjoy building things, especially when it relates to problem solving and engineering solutions.</p>
+                        <p> As such, I'm an avid hackathon attendee and I work on a lot of different projects on my spare time. My interests lie in human-computer interaction, machine learning, data science, and information retrieval. I am very interested in finding novel ways to utilize technology and ideas to create really cool things.</p>
+                        <br>
+                        <p>Want to talk? Send me an email at: andy@andyvuong.me</p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="valign-middle">
-                        <ul class="inline-list link">
-                            <li><a href="#about" class="link animated zoomIn">About Me</a></li>
-                            <li><a href="#projects" class="link animated zoomIn">Projects</a></li>
-                            <li><a href="#blog" class="link animated zoomIn">Blog Posts</a></li>
-                            <li><a href="resume.pdf" class="link animated zoomIn">Resume</a></li>
-                        </ul>
+                <div class="about-links">
+                    <ul class="inline-list">
+                        <li><a href="https://github.com/andyvuong"><i class="fa fa-github fa-3x"></i><div>Github</div></a></li>
+                        <li><a href="https://linkedin.com/in/vuongandy"><i class="fa fa-linkedin-square fa-3x"></i><div>LinkedIn</div></a></li>
+                        <li><a href="mailto:andy@andyvuong.me"><i class="fa fa-envelope-o fa-3x"></i><div>Email</div></a></li>
+                        <li><a href="resume.pdf"><i class="fa fa-file-text fa-3x"></i><div>Resume</div></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Middle -->
+            <div class="col-md-4 c2 col-ext">
+                <div class="section-header section-font-sec">Projects</div>
+                <p id="proj-note">The following are featured projects. Please see this <a href="projects">link</a> for more.</p>
+                <!-- Project -->
+                <div class="project-box">
+                    <h3>Safe Route Recommender   <small><a href="https://github.com/andyvuong/SafeRouteRecommender">[Github]</a>  <a href="posts/project_safe">[Blog]</a></small></h3> 
+                    <div class="media">
+                        <div class="media-body">
+                            <p>
+                            A recommender system built on top of adaptive information filtering and machine learning principles to algorithmitically generate the "safest" walking path between two points on UIUC's campus. Started as a <a href="http://times.cs.uiuc.edu/course/410s15/">CS410</a> project, continued afterward.
+                            </p>
+                        </div>
+                        <div class="media-right">
+                            <a href="#">
+                            <img class="media-object" src="assets/saferoute-web.png" width="64px" height="64px" alt="Safe Route Interface">
+                            </a>
+                        </div>
                     </div>
+                </div>
+                <!-- Project -->
+                <div class="project-box">
+                    <h3>Jumpy   <small><a href="https://github.com/andyvuong/jumpy">[Github]</a> </small></h3> 
+                    <div class="media">
+                        <div class="media-body">
+                            <p>
+                            Jumpy is a Java library being developed for java-based numerical linear algebra. Jumpy will support n-dimensional arrays for numerical computation, vector/matrix operations, and various numerical methods including gaussian elimination, matrix factorizations, etc.
+                            </p>
+                        </div>
+                        <div class="media-right">
+                            <a href="#">
+                            <i class="media-object fa fa-cube fa-4x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project -->
+                <div class="project-box">
+                    <h3>Lecture Insight   <small><a href="#">[Github]</a>   <a href="#">[Blog]</a></small></h3>
+                    <div class="media">
+                        <div class="media-body">
+                            <p>
+                            Lecture Insight is a system for converting lecture videos into search-able entities so students can find the content they need faster and in an organized manner.
+                            </p>
+                        </div>
+                        <div class="media-right">
+                            <a href="#">
+                            <i class="media-object fa fa-cube fa-4x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project -->
+                <div class="project-box">
+                    <h3>Sail Bought   <small><a href="https://github.com/vrunjeti/Date-a-Face">[Github]</a> </small></h3>
+                    <div class="media">
+                        <div class="media-body">
+                            <p>
+                            Sail Bought was a project built in the database course (CS411). Sail Bought is a refined version of UIUC's Free and For Sale Facebook Group where students can sell and buy items from each other.
+                            </p>
+                        </div>
+                        <div class="media-right">
+                            <a href="#">
+                            <i class="media-object fa fa-cube fa-4x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <h6>Want more? Check out the full <a href="projects">projects page</a> or my <a href="http:github.com/andyvuong">Github</a>.</h6>
                 </div>
 
-                <div class="row">
-                    <div class="valign-middle"> 
-                        <div class="icon-bar three-up nav-back">
-                          <a href="https://github.com/andyvuong" class="item animated fadeInUp">
-                            <i class="fa fa-github fa-2x"></i>
-                            <label class="link-contact">Github</label>
-                          </a>
-                          <a href="https://linkedin.com/in/vuongandy" class="item animated fadeInUp">
-                              <i class="fa fa-linkedin-square fa-2x"></i>
-                            <label class="link-contact">LinkedIn</label>
-                          </a>
-                          <a href="mailto:andy@andyvuong.me" class="item animated fadeInUp" title="andy@andyvuong.me">
-                              <i class="fa fa-envelope-o fa-2x"></i>
-                            <label class="link-contact">Email</label>
-                          </a>
-                        </div>
-                    </div>
-                </div>
             </div>
-        </div> <!-- End Welcome Section -->
-        <a href="#about"><div class="down min-10 valign-middle"></div></a> <!-- Arrow -->
-        <div id="about" class="section">
-            <div class="row title-bar custom-center">
-                <ul class="title-area">
-                    <h1 class="title-header">About Me</h1>
-                </ul>
-            </div>
-            <br><br>
-            <div class="row">
-                <div class="small-2 columns">
-                    <p>secret text</p>
-                </div>
-                <div class="small-6 columns">
-                   <h1 class="row greet">Hello.</h1>  
-                    <p class="row text">I am an undergraduate student studying computer science at the University of Illinois at Urbana-Champaign. I really enjoy building things, especially when it relates to problem solving and engineering solutions. As such, I'm an avid hackathon attendee and I work on a lot of different projects on my spare time. My interests lie in human-computer interaction, machine learning, data science, rocketry, and aerospace.</p>
-                    <p></p><p class="row text">Want to talk? Send me an email at: andy@andyvuong.me</p>
-                </div> 
-                <div class="small-4 columns">
-                    <div>
-                        <img id="profile" src="assets/prof.jpg" alt="profile"/>
-                    </div>
-                </div>
-            </div>
-        </div> <!-- End About Section -->
-       <a href="#projects"><div class="animated flipInX down min-10 valign-middle"></div></a> <!-- Arrow -->
-        <div id="projects" class="section">
-            <div class="row title-bar custom-center">
-                <ul class="title-area">
-                    <h1 class="title-header">Projects</h1>
-                </ul>
-            </div>
-            <br><br>
-            <div class="row">
-                <p class="text custom-center">You can view the source of most of these projects on my <a href="https://github.com/andyvuong">Github</a>. (Note: This section is under construction ~ beautification needed)                 </p>
-            </div>
-            <!-- Project Content Start -->
-            <div class="contenta valign-middle">
-                <ul class="medium-block-grid-3 large-block-grid-3">
-                  <li class="c1">
-                      <div class="content-box">
-                        <h2 class="text custom-center"><a href="#">Code Texters</a></h2>
-                        <div class="content-box-desc">
-                          <p>
-                            Code Texters allows you to subscribe to a service that sends coding-related questions right to your 
-                            mobile phone. It only requires your phone number to get started and you can unsubscribe at anytime.
-                            Register online to log your stats and see how you stack up against other users. 
-                            Visit the <a>homepage</a> or see the <a href="https://github.com/andyvuong/code-texters">source</a>.
-                          </p>
-                        </div>
-                      </div>
-                  </li>
-                  <li class="c1">
-                      <div class="content-box">
-                        <h2 class="text custom-center"><a href="#">Flick</a></h2>
-                        <div class="content-box-desc">
-                          <p>
-                            Flick is an android application that allows users to physically flick their phone to send webpages
-                            from the mobile browser directly to a browser that has the accompanying flick chrome extension installed.
-                            Flick was built at a mini-hackathon hosted by IEEE@UIUC. See the <a href="https://github.com/andyvuong/flick">source</a>.
-                          </p>
-                        </div>
-                      </div>
-                  </li>
-                  <li class="c1">
-                      <div class="content-box">
-                        <h2 class="text custom-center"><a href="#">Grammatica</a></h2>
-                        <div class="content-box-desc">
-                          <p>
-                            Grammatica is a grammar and spelling correction web service that was built at Wildhacks 2014. Users can 
-                            visit the site and enter any phrase to be analyzed and corrected. See the
-                            <a href="https://github.com/andyvuong/grammatica">source</a>.
-                          </p>
-                        </div>
-                      </div>
-                  </li>
-                </ul> <!-- End Project List -->
-            </div>
-        </div> <!-- End Project Section --> 
-        <a href="#blog"><div class="down min-10 valign-middle"></div></a> <!-- Arrow -->
-        <div id="blog" class="section-adj">
-            <div class="row title-bar custom-center">
-                <ul class="title-area">
-                    <h1 class="title-header">Blog Posts</h1>
-                </ul>
-            </div>
-            <div class="row">
-                <p class="text custom-center">Projects, technology, thoughts, and experiences.</p>
-            </div>
-            <div class="row">
-                <div class="small-6 columns">
-                    <!-- Column 1 Content Starts -->
-                    <ul class="cust-cen">
-                        <li>
-                            <h5><a href="posts/things-i-find-useful"><> Things I Find Useful</a></h5>
-                            <h5><a href="posts/ideas"><> Ideas 1/15/15</a></h5>
-                        </li>
+            <!-- Right -->
+            <div class="col-md-4 c3 col-ext">
+                <div class="section-header section-font-sec">Blog</div>
+                <div class="blog-content">
+                    <h3>CS</h3>
+                    <ul>
+                        <a href="posts/hackathon-experiences.html"><li><> Hackathon Experiences</li></a>
+                        <a href="posts/project-videosearch.html"><li><> Project: Safe Route Recommender</li></a>
+                        <a href="posts/project-recommender.html"><li><> Project: Lecture Insight</li></a>
                     </ul>
-                    <!-- Column 1 Content Ends -->
-                </div>
-                <div class="small-6 columns">
-                    <!-- Column 2 Content Starts -->
-                    <ul class="cust-cen">
-                        <li>
-                            <h5><a href="posts/hackathon-experiences"><> Hackathon Experiences</a></h5>
-                        </li>
+                    <h3>Life</h3>
+                    <ul>
+                        <a href="posts/teamwork.html"><li><> Team Projects & Protips</li></a>
+                        <a href="posts/good-eats.html"><li><> Good Eats: Chicago & the Bay</li></a>
                     </ul>
-                    <!-- Column 2 Content Ends -->
-                </div> 
+                    <h3>Ideas</h3>
+                    <ul>
+                    </ul>
+                </div>
+                <div class="more1">
+                    <h2>Other Work:</h2>
+                    <ul>
+                        <li><a href="http://social.cs.uiuc.edu/papers/pdfs/Eslami_Algorithms_CHI15.pdf">SIGCHI 2015 Paper</a></li>
+                    </ul>
+                </div>
+                <div class="more2">
+                    <h2>Current Activities & News:</h2>
+                    <ul>
+                        <li>Spending my summer in the SF Bay Area @ Visa.</li>
+                        <li>Working on a few side projects.</li>
+                        <li>Taking some courses.</li>
+                    </ul>
+                </div>
             </div>
-        </div> <!-- End Blog Section -->
-        <div><div class="bot"><a href="#main-container"><div class="up-arrow"></div></a></div></div> <!-- Arrow -->
-        <!-- Scripts Start-->
+          </div>
+        </div>
+        <!-- Scripts -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="js/modernizr.js"></script>
-        <script src="js/foundation.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
         <script src="js/custom.js"></script>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-          ga('create', 'UA-53208987-1', 'auto');
-          ga('send', 'pageview');
-        </script>
-        <!-- End Scripts -->
     </body>
-</html>
+</html> 
+
+
+
+
+

@@ -1,226 +1,186 @@
-body {
-    background: #222; 
+/* TAGS */   
+html, body {
+    height:100%;
+    width: 100%;
 }
 
-#main-container {
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+.header:active {
+    text-decoration: none;
+}
+
+/* Page Layout */   
+.section {
+  min-height: 100px;
+  height: 100%;
+  width: 100%;
+  margin:  0 auto;
+}
+
+.row-ext {
+    min-width: 100%;
     height: 100%;
+    min-height: 100%;
+    background: red;
+    display: block;
     margin: 0 auto;
-    display: table; /* Vertical align */   
 }
 
-#container {
+.col-ext {
     height: 100%;
-    padding: 0 24px;
-    display: table-cell; /* Vertical align */
-    vertical-align: middle; /* Vertical align */
+    min-height: 100%;
+    margin: 0 auto;
+    display: block;
 }
 
-#main-header {
-    font-size: 5em;
-    text-align: center;
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
+/* Color Aesthetics */
+.c1 {
+    background-color: #EBEBEB;
+}
+
+.c2 {
+    background-color: #E8E8E8;
+}
+
+.c3 {
+    background-color: #E5E5E5;
+}
+
+/* Content Boxes */
+.section-header {
     font-family: PT-Mono, Montserrat, serif;
-    color: #FFF;
+    text-align: center;
+    display: absolute;
+    color: #121212;
 }
 
-#vanity-subtext {
-    font-size: 2.00em;
+.section-font-pri {
+    font-size: 5.8em;
+    min-height: 15%;
+}
+
+.section-font-sec {
+    font-size: 3.5em;
+    min-height: 10%;
+}
+
+.about-content { 
+    font-family: Montserrat, serif;
+    width: auto;
+    height:62%;
+    min-height: 62%;
+    margin: 0 auto;
+    display: block;
     text-align: center;
-    font-family: Maven Pro, sans-serif;
-    font-style: oblique;
-    color: 	#777;
+    
+}
+
+.about-text{
+    margin-top: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 100%
+    text-align: center;
+}
+
+.about-links {
+    font-family: PT-Mono, Montserrat, serif;
+    height: 23%;
+    min-height: 23%;
+}
+
+.inline-list {
+    position: relative;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.inline-list li{
+    display: inline-block;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 #profile {
-	margin: 15%;
-    border-radius: 50%;	
-	border: 1px solid black;
-	box-shadow: 0 0 1em black;
+  display: absolute;
+  text-align: center;
+  border-radius: 50%; 
+  border: 1px solid black;
+  box-shadow: 0 0 1em black;
 }
 
-.img-container {
-    height:75%;
-    width:75%;
-	margin: 5%;
-	border: 1px solid black;
-	box-shadow: 0 0 1em black;
-
+#proj-note {
+  height: 3%;
+  min-height: 3%;
+  font-family: Montserrat, serif;
+  text-align: center;
 }
 
-::selection {
-	background: #908cba;
+.project-box {
+    font-family: PT-Mono, Montserrat, serif;
+    height: 20%;
+    min-height: 20%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
-.valign-middle {
-    height: 100%;
-    margin: 0 auto;
-    display: table; /* Vertical align */   
-}
-
-.valign-middle .columns {
-    height: 100%;
-    padding: 0 24px;
-    display: table-cell; /* Vertical align */
-    vertical-align: middle; /* Vertical align */
-}
-
-.section {
-    min-height: 90%;
-}
-
-.section-adj {
-    max-height: 50%;
-    min-height: 50%;
-}
-
-.section-half {
-    min-height: 50%;
-    max-height: 50%;
-}
-
-.post-section {
-    margin-top: 1%;
-    max-height: 90%;
-    min-height: 90%;
-}
-
-.nav-back {
-    background: #222;  
-}
-
-.greet {
-    font-size: 2.00em;
-    font-family: Maven Pro, sans-serif;
-    color: white;
-}
-
-.link {
-    font-size: 1.2em;
-    font-family: Maven Pro, sans-serif;
-    text-align: center;   
-}
-
-.link-contact {
-    font-size: 1.05em;
-    font-family: Maven Pro, sans-serif;
-    text-align: center;
-    color: #777
-}
-
-.size-2 {
-    font-size: 1.5em; 
-}
-
-.custom-center {
-    text-align: center;
-}
-
-.cust-cen {
-    margin-left: 25%;
-}
-
-.title-bar {
-    overflow: hidden;
-    height: 75px;
-    line-height: 75px;
-    position: relative;
-    background: #222;
-    margin-bottom: 0; 
-}
-
-.title-header {
-    font-size: 3.4em;
-    font-family: Montserrat, sans-serif;
-    text-align: center;
-    color: #908cba;
-}
-
-.up-arrow {
-    display:block;
-	position: relative;
-    content: "";
-    height:0;
-    width:0;
-    padding:0;
-    margin:-8px;
-    border:16px solid transparent;
-    border-bottom-color:#CCC;
-    border-top-color:transparent;
-}
-
-.down {
-    width: 0;
-    height: 0;
-    opacity: 0.15;
-    border-style: solid;
-    border-width: 50px 50px 0 50px;
-    border-color: #777 transparent transparent transparent;
-}
-
-.down:hover {
-    opacity: 0.2;
-}
-
-.bot {
-    display: none;
-	position: fixed;
-    right:3%;
-    bottom:4%;
-}
-
-.min-5 {
+.project-footer {
+    font-family: PT-Mono, Montserrat, serif;
+    height: 5%;
     min-height: 5%;
-    max-height: 5%;
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
 }
 
-.min-10 {
-    min-height: 10%;
-    max-height: 10%;
+.blog-content {
+    font-family: PT-Mono, Montserrat, serif;
+    height:60%;
+    min-height: 60%;
+    margin-left: 10%;
+    font-size: 1.2em;
 }
 
-.min-90 {
-    min-height: 90%;
-    max-height: 90%;
+.more1 {
+    font-family: PT-Mono, Montserrat, serif;
+    height:15%;
+    min-height: 15%;
+    margin-left: 10%;
 }
 
-.contenta {
-    width: 55%;
+.more2 {
+    font-family: PT-Mono, Montserrat, serif;
+    height:15%;
+    min-height: 15%;
+    margin-left: 10%;
 }
 
-.content-box-desc {
-    color: #FFF;   
-}
-
-.side-nav {
-  position: fixed;
-}
-
-.post-title {
-    font-family: Montserrat, sans-serif;
-    color: #F2502C; 
-}
-
-.mini-header-purple {
-    font-family: Montserrat, sans-serif;
-    color: #908cba;
-}
-
-.light-text {
-    font-family: Maven Pro, sans-serif;
-    opacity: 0.5;
-    color: #777;
-}
-
-.date-text {
-    font-family: Maven Pro, sans-serif;
-    color:  #908cba;
-}
-
-.cmd-text {
-    font-family: Maven Pro, sans-serif;
-    color: #D2502C;
-}
-
-.text {
-    font-family: Maven Pro, sans-serif;
-    color: white;
+.blog-content ul {
+   list-style-type: none;
 }
