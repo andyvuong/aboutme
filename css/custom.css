@@ -1,6 +1,10 @@
 /* TAGS */   
-html, body {
-    height:100%;
+html {
+    height: 100%;
+}
+
+body {
+    min-height:100%;
     width: 100%;
 }
 
@@ -31,26 +35,35 @@ a:active {
 
 /* Page Layout */   
 .section {
-  min-height: 100px;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   margin:  0 auto;
+  position: absolute;
+  overflow: hidden
 }
 
 .row-ext {
     min-width: 100%;
     height: 100%;
-    min-height: 100%;
     background: red;
     display: block;
     margin: 0 auto;
+    overflow: hidden
 }
 
 .col-ext {
-    height: 100%;
-    min-height: 100%;
-    margin: 0 auto;
-    display: block;
+    min-height: 100vh;
+    overflow: hidden;
+    margin:  0 auto;
+}
+
+.row{
+    overflow: hidden; 
+}
+
+[class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
 }
 
 .no-gutter > [class*='col-'] {
@@ -71,33 +84,32 @@ a:active {
     background-color: #E5E5E5;
 }
 
-/* Content Boxes */
+/* headers */
 .section-header {
     font-family: PT-Mono, Montserrat, serif;
     text-align: center;
-    display: absolute;
+    display: block;
     color: #121212;
 }
 
 .section-font-pri {
+    display: block;
     font-size: 5.8em;
-    min-height: 15%;
+    height: 15%;
 }
 
 .section-font-sec {
     font-size: 3.5em;
-    min-height: 10%;
+    height: 10%;
 }
 
+/* about column */
 .about-content { 
     font-family: Montserrat, serif;
     width: auto;
-    height:62%;
-    min-height: 62%;
     margin: 0 auto;
     display: block;
-    text-align: center;
-    
+    text-align: center;    
 }
 
 .about-text{
@@ -109,13 +121,14 @@ a:active {
 }
 
 .about-links {
+    display: block;
+    margin-top: 12.5%;
+    text-align: center;   
     font-family: PT-Mono, Montserrat, serif;
-    height: 23%;
-    min-height: 23%;
+
 }
 
 .inline-list {
-    position: relative;
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
@@ -135,9 +148,13 @@ a:active {
   box-shadow: 0 0 1em black;
 }
 
+.la {
+    height: 100%;
+}
+
+/* project column */
 #proj-note {
-  height: 3%;
-  min-height: 3%;
+  height: 5%;
   font-family: Montserrat, serif;
   text-align: center;
 }
@@ -145,39 +162,37 @@ a:active {
 .project-box {
     font-family: PT-Mono, Montserrat, serif;
     height: 20%;
-    min-height: 20%;
     margin-left: 1%;
     margin-right: 1%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .project-footer {
     font-family: PT-Mono, Montserrat, serif;
-    height: 5%;
-    min-height: 5%;
-    margin-left: 1%;
-    margin-right: 1%;
+    margin-top: 5%;
     text-align: center;
+    position: relative;
+    bottom: 0;
 }
 
+/* blog column */
 .blog-content {
     font-family: PT-Mono, Montserrat, serif;
-    height:60%;
-    min-height: 60%;
+    height: 50vh;
     margin-left: 10%;
     font-size: 1.2em;
 }
 
 .more1 {
     font-family: PT-Mono, Montserrat, serif;
-    height:15%;
-    min-height: 15%;
+    height: 20vh;
     margin-left: 10%;
 }
 
 .more2 {
     font-family: PT-Mono, Montserrat, serif;
-    height:15%;
-    min-height: 15%;
+    height: 10vh;
     margin-left: 10%;
 }
 
