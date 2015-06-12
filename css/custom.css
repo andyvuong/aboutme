@@ -9,8 +9,7 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: blue;
+    color: #2F84A9;
 }
 
 a:link {
@@ -21,8 +20,8 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: none;
+a li:hover {
+    color: #215C76;
 }
 
 a:active {
@@ -141,7 +140,7 @@ a:active {
     font-family: PT-Mono, Montserrat, serif;
     text-align: center;
     clear: both;
-    margin-right: 2%;
+    margin-right: 6%;
 }
 
 .inline-list {
@@ -218,3 +217,11 @@ a:active {
 .blog-content ul {
    list-style-type: none;
 }
+
+.blog-content ul a {
+    color: #2F84A9;
+}
+
+
+
+
