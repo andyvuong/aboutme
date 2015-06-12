@@ -84,6 +84,18 @@ a:active {
     background-color: #E5E5E5;
 }
 
+.lc {
+    color: #2F84A9;
+}
+
+.firec {
+    color: #E42535;
+}
+
+.lookc {
+    color: #903640;
+}
+
 /* headers */
 .section-header {
     font-family: PT-Mono, Montserrat, serif;
@@ -100,7 +112,9 @@ a:active {
 
 .section-font-sec {
     font-size: 3.5em;
-    height: 10%;
+    height: 10vh;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 /* about column */
@@ -125,7 +139,9 @@ a:active {
     margin-top: 12.5%;
     text-align: center;   
     font-family: PT-Mono, Montserrat, serif;
-
+    text-align: center;
+    clear: both;
+    margin-right: 2%;
 }
 
 .inline-list {
@@ -138,6 +154,7 @@ a:active {
     display: inline-block;
     padding-left: 3%;
     padding-right: 3%;
+    text-align: center;
 }
 
 #profile {
@@ -154,7 +171,7 @@ a:active {
 
 /* project column */
 #proj-note {
-  height: 5%;
+  height: 3%;
   font-family: Montserrat, serif;
   text-align: center;
 }
@@ -192,8 +209,10 @@ a:active {
 
 .more2 {
     font-family: PT-Mono, Montserrat, serif;
-    height: 10vh;
+    position: relative;
+    bottom: 0;
     margin-left: 10%;
+    margin-bottom: 5%;
 }
 
 .blog-content ul {
