@@ -140,7 +140,7 @@ a:active {
     font-family: PT-Mono, Montserrat, serif;
     text-align: center;
     clear: both;
-    margin-right: 6%;
+    margin-right: 7%;
 }
 
 .inline-list {
@@ -186,7 +186,8 @@ a:active {
 
 .project-footer {
     font-family: PT-Mono, Montserrat, serif;
-    margin-top: 5%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     text-align: center;
     position: relative;
     bottom: 0;
