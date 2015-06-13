@@ -214,6 +214,10 @@ a:active {
     color: #2F84A9;
 }
 
+/* Blog Posts settings */
 
+.posts-header {
+    font-family: PT-Mono, Montserrat, serif;
+}
 
 
