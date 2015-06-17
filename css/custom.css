@@ -242,7 +242,12 @@ h1 small {
 }
 
 .posts-header {
+    color: #A80100;
     font-family: PT-Mono, Montserrat, serif;
+}
+
+.timeline-panel h3 {
+    color: #A8412F;
 }
 
 .timeline p {
