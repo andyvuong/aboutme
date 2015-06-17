@@ -88,7 +88,7 @@ a:active {
 }
 
 .lookc {
-    color: #903640;
+    /* color: #903640; */
 }
 
 /* headers */
@@ -107,6 +107,7 @@ a:active {
     font-size: 3.5em;
     min-height: 15vh;
 }
+
 
 /* about column */
 .about-content { 
@@ -176,6 +177,10 @@ a:active {
     margin-bottom: 3%;
 }
 
+.project-box h3 {
+    color: #A80100;
+}
+
 .project-footer {
     font-family: PT-Mono, Montserrat, serif;
     margin-top: 4%;
@@ -191,6 +196,18 @@ a:active {
     min-height: 50vh;
     margin-left: 10%;
     font-size: 1.2em;
+}
+
+.blog-content h3 {
+    color: #A80100;
+}
+
+.more1 h2 {
+    color: #A80100;
+}
+
+.more2 h2 {
+    color: #A80100;
 }
 
 .more1 {
@@ -216,8 +233,26 @@ a:active {
 
 /* Blog Posts settings */
 
+h1 small {
+    font-size: 50%;
+}
+
+.page-header p {
+    padding-left: 2%;
+}
+
 .posts-header {
     font-family: PT-Mono, Montserrat, serif;
 }
 
+.timeline p {
+    font-family: PT-Mono, Montserrat, serif;  
+}
 
+.timeline h3 {
+    font-family: PT-Mono, Montserrat, serif;  
+}
+
+.timeline li {
+    font-family: PT-Mono, Montserrat, serif;  
+}
