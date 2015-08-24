@@ -43,7 +43,6 @@ a:active {
     background: red;
     display: block;
     margin: 0 auto;
-    overflow: hidden
 }
 
 .col-ext {
@@ -53,7 +52,6 @@ a:active {
 }
 
 .row{
-    overflow: hidden; 
 }
 
 [class*="col-"]{
@@ -99,8 +97,8 @@ a:active {
 }
 
 .section-font-pri {
-    font-size: 5.8em;
-    min-height: 15%;
+    font-size: 4.5em;
+    min-height: 15vh;
 }
 
 .section-font-sec {
@@ -193,7 +191,7 @@ a:active {
 /* blog column */
 .blog-content {
     font-family: PT-Mono, Montserrat, serif;
-    min-height: 50vh;
+    min-height: 30vh;
     margin-left: 10%;
     font-size: 1.2em;
 }
