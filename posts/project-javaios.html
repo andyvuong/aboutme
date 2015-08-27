@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Project:"/>
+        <meta property="og:title" content="Project:"/>
+        <meta property="og:site_name" content="andyvuong"/>
+        <meta property="og:url" content="http://www.andyvuong.me/project-"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="Project: MetaJ/iJava"/>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro|PT+Mono' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../css/custom.css"/>
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+        <title>Project: MetaJ/iJava | Andy Vuong</title>
+    </head>
+    <body>
+        <div class="c3">
+            <div class="container">
+                <div class="page-header posts-header">
+                    <h1 id="timeline">Project: MetaJ/iJava    <small class="small">A solution for developing with java on iOS.</small></h1>
+                    <br>
+                    <a class="lc" href="http://andyvuong.me">[Back to Home]</a>
+                </div>
+                <a class="lc link-font" href="http://gtihub.com/andyvuong/metajserver"> > Project Github <</a>
+
+                <h3>Overview</h3>
+                <p>
+                    <span class="tab"></span>The MetaJ/iJava project is a solution for developing java code on an iOS device. The project consists of two components: a hybrid mobile application developed using <a class="lc" href="http://phonegap.com/">PhoneGap/Cordova</a> (a hybrid mobile application framework) and a Java application server. The mobile application is a java IDE designed for ease of use and productivity. The java server is used to programmatically compile and invoke java source code. The mobile app sends java code to the server as a HTTP request. The server processes it and sends back anything written to standard output as a response to the mobile application's request.
+                    <br><br><span class="mini-header">Background</span><br><br>
+                    <span class="tab"></span>I spent a lot of time traveling while I was in the bay area during the summer of 2015. My average commute time from various parts of the bay (Foster City to San Francisco for example) was close to a hour sometimes. Sometimes, I wouldn't have my laptop and tablet with me. Just my iPhone. Because I was developing in Java for the entire summer, I was curious as to whether or not there existed an app on the app store for iOS with a Java IDE. I looked into a few apps but most were not free and others weren't up to par to what I was expecting. I decided it might be a fun exercise to develop my own solution.
+                    <br><br><span class="mini-header">Considerations</span><br><br>
+                </p>
+                <p>
+                    From the start, I had a few goals in mind for this project:
+                    <ul class="link-font">
+                        <li>Working on this project should be a good learning experience.</li>
+                        <li>The project should be open source and well documented for others to expand on or use.</li>
+                        <li>I would utilize skills that I've learned from my internships, hackathons, and courses to develop something that is well architectured.</li>
+                    </ul>
+                </p>
+                <p>
+                    I also had to consider few problems when I began planning the project:
+                    <ul class="link-font">
+                        <li>I didn't know how to develop for iOS (no Swift or ObjectiveC) and I didn't have a Macbook and thus no access to XCode.</li>
+                        <li>I wanted to focus on learning a few things very well versus picking up too many different technologies that I probably wouldn't use again anytime soon.</li>
+                    </ul>
+                </p>
+                <p>I decided to use <a class="lc" href="http://phonegap.com/">PhoneGap/Cordova</a> because I had worked on a hybrid mobile application in the past so I had some familiarity with it. This would allow me to develop my JavaScript and web development skills since the PhoneGap/Cordova frameworks allows you develop native phone apps with just JavaScript and web libraries/frameworks. I wrote the mobile app's accompanying server (discussed in Design) in Java.</p><br>
+                 <h3>Design</h3>
+                <p>
+                <span class="tab"></span>I wanted the full capabilities of a JVM for my IDE without spending anything on exisiting services. Inspired by programming exercise websites that offer a editor and code compilmation, I decided to write my own server that would progammatically compile and invoke Java source code.
+                </p>
+                <p>The mobile app design is minimal with the main focus on the code editor and organizational interface. The app sends a POST request to the Java server that handles the code. The HTTP requests are handled by my own custom written networking library (for learning purposes). The server can accept multiple connections (imagine the possibilities) and keeps detailed logs using Log4J. The server sends back anything written to standard out (compile errors, output, etc) as a response message to the POST request. The server is configurable through a properties file which allows someone to disable logging, save any code recevied by a connection, save compiled classes, and perform other actions.</p>
+                <br>
+            </div>
+        </div>
+    </body>
+</html>
