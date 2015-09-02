@@ -269,6 +269,10 @@ h1 small {
     font-size: 1.2em;
 }
 
+.container  ul li a {
+    font-family: PT-Mono, Montserrat, serif;
+}
+
 .container  p ul li {
     font-family: PT-Mono, Montserrat, serif;
 }
