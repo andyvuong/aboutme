@@ -125,19 +125,16 @@ a:active {
 }
 
 .about-links {
+    margin-top: 7%;
     display: block;
-    margin-top: 12.5%;
     text-align: center;   
     font-family: PT-Mono, Montserrat, serif;
-    text-align: center;
-    clear: both;
-    margin-right: 7%;
 }
 
 .inline-list {
+    display: absolute;
     text-align: center;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-right: 7%;
 }
 
 .inline-list li{
