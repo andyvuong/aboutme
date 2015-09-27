@@ -127,21 +127,21 @@ a:active {
 .about-links {
     margin-top: 7%;
     display: block;
-    text-align: center;   
+    width: 100%;  
     font-family: PT-Mono, Montserrat, serif;
+    text-align: center;
 }
 
 .inline-list {
     display: absolute;
-    text-align: center;
-    margin-right: 7%;
+    width: 100%;     
 }
 
 .inline-list li{
     display: inline-block;
-    padding-left: 3%;
-    padding-right: 3%;
-    text-align: center;
+    padding-left: 1%;
+    padding-right: 1%;
+    
 }
 
 #profile {
