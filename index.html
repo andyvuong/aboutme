@@ -9,159 +9,163 @@
         <meta property="og:url" content="http://www.andyvuong.me"/>
         <meta property="og:type" content="website"/>
         <meta property="og:description" content="Aspiring software engineer and computer scientist at UIUC."/>
-        <link rel="stylesheet" href="css/custom.css"/>
-        <link href='http://fonts.googleapis.com/css?family=Montserrat|Maven+Pro|PT+Mono' rel='stylesheet' type='text/css'>
-        <link href="css/bootstrap.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Montserrat'>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
         <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
         <title>Andy Vuong</title>
     </head>
-    <body>
-        <div class="container-fluid section">
-          <div class="row row-ext">
-            <!-- Left -->
-            <div class="col-md-4 c1 col-ext">
-                <div class="section-header section-font-pri">Andy Vuong</div>
-                <div class="about-content">
-                    <img id="profile" src="assets/prof.jpg" alt="profile" width="130px" height="188px" />
-                    <div class="about-text">
-                        <br>
-                        <h3>Welcome!</h3>
-                        <br>
-                        <p>I am an undergraduate student studying computer science at the <a class="lc" href="http://cs.illinois.edu/">University of Illinois at Urbana-Champaign</a>. I really enjoy building things, especially when it relates to problem solving and engineering solutions.</p>
-                        <p> As such, I'm an avid <a class="lc" href="posts/hackathon-experiences.html">hackathon</a> attendee and I work on a lot of different <a class="lc" href="https://github.com/andyvuong">projects</a> on my spare time. My interests lie in human-computer interaction, machine learning, data science, and information retrieval. I am very interested in finding novel ways to utilize technology and ideas to create really cool things.</p>
-                        <br>
-                        <p>Want to talk? Send me an email at: <span class="firec">andy@andyvuong.me</span></p>
-                    </div>
+    <body id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6">
+                    <span id="title" class="color-blue">Andy Vuong</span>
                 </div>
-                <div class="about-links">
-                    <ul class="inline-list">
-                        <li><a href="https://github.com/andyvuong"><i class="fa fa-github fa-3x"></i><div>Github</div></a></li>
-                        <li><a href="https://linkedin.com/in/vuongandy"><i class="fa fa-linkedin-square fa-3x"></i><div>LinkedIn</div></a></li>
-                        <li><a href="mailto:andy@andyvuong.me"><i class="fa fa-envelope-o fa-3x"></i><div>Email</div></a></li>
-                        <li><a href="resume.pdf"><i class="fa fa-file-text fa-3x"></i><div>Resume</div></a></li>
-                    </ul>
+                <div class="col-xs-6">
+                        <ul class="inline-list">
+                            <li><a href="resume.pdf"><i class="fa fa-file-text fa-3x"></i><div>Resume</div></a></li>
+                            <li><a href="https://github.com/andyvuong"><i class="fa fa-github fa-3x"></i><div>Github</div></a></li>
+                            <li><a href="https://linkedin.com/in/vuongandy"><i class="fa fa-linkedin-square fa-3x"></i><div>LinkedIn</div></a></li>
+                            <li><a href="mailto:andy@andyvuong.me"><i class="fa fa-envelope-o fa-3x"></i><div>Email</div></a></li>
+                        </ul>
                 </div>
             </div>
-            <!-- Middle -->
-            <div class="col-md-4 c2 col-ext la">
-                <div class="section-header section-font-sec">Projects</div>
-                <p id="proj-note">The following are featured projects. Please see this <a class="lc" href="projects">link</a> for more.</p>
-                <!-- Project -->
-                <div class="project-box">
-                    <h3>Safe Route Recommender   <small><a href="https://github.com/andyvuong/SafeRouteRecommender">[Github]</a></small></h3> 
-                    <div class="media">
-                        <div class="media-body">
-                            <p>
-                            A recommender system built on top of adaptive information filtering and machine learning principles to algorithmitically generate the "safest" walking path between two points on UIUC's campus. Started as a <a class="lc" href="http://times.cs.uiuc.edu/course/410s15/">CS410</a> project, continued afterward.
-                            </p>
-                        </div>
-                        <div class="media-right">
-                            <a href="#">
-                            <img class="media-object" src="assets/saferoute-web.png" width="64px" height="64px" alt="Safe Route Interface">
-                            </a>
-                        </div>
-                    </div>
+            <hr>
+            <div class="row">
+                <div class="col-xs-5 col-md-3">
+                    <img id="profile" class="center-block" src="assets/prof.jpg" alt="profile" width="130px" height="188px">
+                    <ul id="nav-bar" class="nav nav-stacked affix">
+                        <li></li>
+                        <li><a class="active" href="#about">About</a></li>
+                        <li><a href="#work">Work Experience</a></li>
+                        <li><a href="#project">Projects</a></li>
+                    </ul>
                 </div>
-                <!-- Project -->
-                <div class="project-box">
-                    <h3>Jumpy   <small><a href="https://github.com/andyvuong/jumpy">[Github]</a> </small></h3> 
-                    <div class="media">
-                        <div class="media-body">
-                            <p>
-                            Jumpy is a Java library being developed for java-based numerical linear algebra. Jumpy will support n-dimensional arrays for numerical computation, vector/matrix operations, and various numerical methods including gaussian elimination, matrix factorizations, etc.
-                            </p>
-                        </div>
-                        <div class="media-right">
-                            <a href="#">
-                            <img class="media-object" src="assets/jumpy-web.png" width="64px" height="64px" alt="Jumpy Logo">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project -->
-                <div class="project-box">
-                    <h3>Lecture Insight   <small><a href="#">[Github]</a>   </small></h3>
-                    <div class="media">
-                        <div class="media-body">
-                            <p>
-                            Lecture Insight is a system for converting lecture videos into search-able entities so students can find the content they need faster and in an organized manner.
-                            </p>
-                        </div>
-                        <div class="media-right">
-                            <a href="#">
-                            <i class="media-object fa fa-cube fa-4x"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project -->
-                <div class="project-box">
-                    <h3>MetaJ/iJava   <small><a href="https://github.com/andyvuong/metajserver">[Github]</a>  <a href="posts/project-javaios.html">[Blog]</a></small></h3>
-                    <div class="media">
-                        <div class="media-body">
-                            <p>
-                            MetaJ/iJava is a project that emerged out of my desire to write java code on my iPhone. However, I couldn't find a free app that would let me develop with a Java IDE and support the functionality I desired. I decided to write a hybrid mobile app using PhoneGap/Cordova that would POST source code to a Java server. The server compiles/invokes the code and sends standard out back to the mobile app. It's open source, and free for anyone to deploy on their own servers and start developing with Java on their iOS devices. [Project in Progress]
-                            </p>
-                        </div>
-                        <div class="media-right">
-                            <a href="#">
-                            <img class="media-object" src="assets/ijava-web.png" width="49px" height="64px" alt="Jumpy Logo">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-footer">
-                    <h6>Want more? Check out the full <a class="lc" href="https://github.com/andyvuong">projects page</a> or my <a class="lc" href="https://github.com/andyvuong">Github</a>.</h6>
-                </div>
-                <br>
-
+                <div class="col-xs-13 col-sm-6 col-md-9">
+                    <span class="color-red" style="font-size:3vw">Hi! <small style="font-size: 0.75em">I am a <span id="target"></span><span id="cursor"></span></small></span>
+                    <p>I am a software engineer who is currently studying computer science at the <a href="http://cs.illinois.edu/">University of Illinois at Urbana-Champaign</a>.</p>
+                    <p>I've previously interned at Visa Inc as a software engineering intern and at John Deere as a developer intern. Outside of my studies, you can find me working on a lot of different projects and attending various hackathons across the U.S. I really enjoy designing and building systems from scratch for various applications (it's a great way to learn). I've worked primarily on web development (backend), server-side logic, distributed systems, data mining, and data visualization projects. My interests lie in information retrieval, human-computer interaction, data visualization, machine learning, and distributed systems.</p>
+                    <p>Check out my resume and the various links at the top of the page if you'd like to learn more about me. If you have any questions, please feel free to contact me.</p>
+                </div>            
             </div>
-            <!-- Right -->
-            <div class="col-md-4 c3 col-ext">
-                <div class="section-header section-font-sec">Blog</div>
-                <div class="blog-content">
-                    <h3>CS</h3>
-                    <ul>
-                        <a href="posts/hackathon-experiences.html"><li><> Hackathon Experiences</li></a>
-                        <a href="posts/project-javaios.html"><li><> Project: MetaJ/iJava</li></a>
-                        <!--<a href="posts/project-recommender.html"><li><> Project: Lecture Insight</li></a>-->
-                        <br>
-                    </ul>
-                    <h3>Life</h3>
-                    <ul>
-                        <!--<a href="posts/teamwork.html"><li><> Team Projects & Protips</li></a>-->
-                        <a href="posts/blog-eats.html"><li><> Good Eats</li></a>
-                        <br>
-                    </ul>
-                    <!--<h3>Ideas</h3>-->
-                    <ul>
-                    </ul>
+            <div class="row">
+                <div class="col-xs-5 col-md-3">
                 </div>
-                <div class="more1">
-                    <h2>Other Work:</h2>
-                    <br>
-                    <ul>
-                        <li><a class="lc" href="http://social.cs.uiuc.edu/papers/pdfs/Eslami_Algorithms_CHI15.pdf">Publication: SIGCHI 2015 Paper</a></li>
+                <div class="col-xs-13 col-sm-6 col-md-9">
+                    <hr id="break">
+                    <span id="work" class="title-text color-blue" style="font-size:3vw">Work Experience</span>
+                        <ul id="contents_work">
+                            <li><span>Software Engineering Intern <small>at</small> Visa Inc</span><span class="pull-right small">Summer 2015</span>
+                                <ul>
+                                    <li>Developed features for the CyberSource payment platform.</li>
+                                </ul>
+                            </li>
+                            <li></i><span>Developer Intern <small>at</small> John Deere</span><span class="pull-right small">Summer 2014 - Spring 2015</span>
+                                <ul>
+                                    <li>Developed features for search applications.</li>
+                                </ul>
+                            </li>
+                            <li><span>Student Research Assistant <small>at the</small> University of Illinois</span> <span class="pull-right small">Spring 2014 - Fall 2014</span>
+                                <ul>
+                                    <li>Data transcription, open coding, peer review, and critical analysis.</li>
+                                    <li><a href="http://social.cs.uiuc.edu/papers/pdfs/Eslami_Algorithms_CHI15.pdf">Publication: SIGCHI 2015 Paper</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    <hr id="break">
+                    <span id="project" class="title-text color-blue" style="font-size:3vw">Projects</span>
+                    <br><br>
+                    <p class="description-text"><small>This is only a selected few. Please see my github for more. Make sure to check out each live project below!</small></p>
+                    <ul id="contents_projects" class="media-list">
+                        <li class="media">
+                            <div class="media-left">
+                                <a>
+                                    <i class="fa fa-globe fa-1x"></i>
+                                    <!--<img class="media-object" src="..." alt="...">-->
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Hubble <small><a href="#">[Deployment]</a> <a href="https://github.com/andyvuong/hubble">[Github]</a> <a href="">[Blog Post]</a></small></h3>
+                                <p class="description-text">A Twitter data visualization web app. See the most recent tweets based on the current Twitter trends from across the globe and where those tweets originated from.</p>
+                                <a data-toggle="collapse" href="#hubbleDesc" aria-expanded="false" aria-controls="hubbleDesc">[Read more...]</a>
+                                <div class="collapse" id="hubbleDesc">
+                                    <div class="panel-body">
+                                        <p>This is a data visualization web application built using Spring Boot, D3.js, planetary.js, and MongoDB. The Spring backend consists of a RESTful API utilized by the front-end and D3.js to render visualizations on an HTML5 canvas. The Spring backend periodically runs tasks to refresh a MongoDB datastore with data from Twitter's streaming API. There are various features on the web application including the ability to see where tweets originate from on a globe, view tweets specifically from within the U.S., and view the most recent tweets from top news websites as followed by the acommpanying Twitter handle for the app: <a href="https://twitter.com/hubble_watches">@hubble_watches.</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <a>
+                                    <i class="fa fa-map fa-1x"></i>
+                                    <!--<img class="media-object" src="..." alt="...">-->
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Safe Route Recommender <small><a href="#">[Deployment]</a> <a href="https://github.com/andyvuong/SafeRouteRecommender">[Github]</a> <a href="">[Blog Post]</a></small></h3>
+                                <p class="description-text">A web application that computes a statistically safe path to walk from one destination to another on the University of Illinois's campus. The route is based on collected crime data.</p>
+                                <a data-toggle="collapse" href="#safeDesc" aria-expanded="false" aria-controls="safeDesc">[Read more...]</a>
+                                <div class="collapse" id="safeDesc">
+                                    <div class="panel-body">
+                                        <p>This is a route mapping web application built using NodeJs, Express, and the Google Maps API. Crime data for the Urbana-Champaign (Il) area is collected from a few different sources and conformed into a data object that it is stored in MongoDB. When a user inputs a origin and destination to the map, the data pulled from our database is pulled into an in-memory graph on the backend. The graph vertices represent street intersections and edges represent a path from one intersection to another. Each edge has a weight representing its danger based on the data. The path of least danger is returned to the user. See the readme on github to learn about how danger is calculated and more technical details such as how locations that are not on an intersection are represented in the graph.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <a>
+                                    <i class="fa fa-music fa-1x"></i>
+                                    <!--<img class="media-object" src="..." alt="...">-->
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Touch Band <small><a href="#">[Deployment-in-Progress]</a> <a href="https://github.com/berwin7996/wild15">[Github]</a> <a href="">[Blog Post]</a></small></h3>
+                                <p class="description-text">Play an instrument on a band... all through the internet. Join a network of other participants and play one of many available digital instruments. Create and save your sessions and share it with others so they can try it in a rockband-like game.</p>
+                                <a data-toggle="collapse" href="#bandDesc" aria-expanded="false" aria-controls="bandDesc">[Read more...]</a>
+                                <div class="collapse" id="bandDesc">
+                                    <div class="panel-body">
+                                        <p>Description to come...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <a>
+                                    <i class="fa fa-play fa-1x"></i>
+                                    <!--<img class="media-object" src="..." alt="...">-->
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Lecture Insight <small><a href="#">[Deployment-in-Progress]</a> <a href="https://github.com/andyvuong">[Github]</a> <a href="">[Blog Post]</a></small></h3>
+                                <p class="description-text">Watch lecture videos while having a handy set of tools that allow you to search for concepts mentioned in the video, study sections with generated summarizations and links to other resources, and the ability to create and share your own notes.</p>
+                                <a data-toggle="collapse" href="#lectureDesc" aria-expanded="false" aria-controls="lectureDesc">[Read more...]</a>
+                                <div class="collapse" id="lectureDesc">
+                                    <div class="panel-body">
+                                        <p>Description to come...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
-                </div>
-                <div class="more2">
-                    <h2>Current Activities & News:</h2>
-                    <br>
-                    <ul>
-                        <li>Just finished my internship at Visa and now it's time for school!</li>
-                        <li>Working on a few side projects and courses.</li>
-                        <li>Delving into networking related topics (new research project?). Internet infrastucture is interesting.</li>
-                    </ul>
-                </div>
+                </div> 
             </div>
-          </div>
+            <hr>
+            <div id="footer" class="text-center">Updated December 2015 | Copyright &copy; Andy Vuong</div>
         </div>
-        <!-- Scripts -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
         <script src="js/custom.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#target').teletype({text: ['software engineer.', 'computer scientist.', 'student.', 'movie fanatic.', 'sci-fi nut.']});
+                $('#cursor').teletype({text: ['|', ' '], delay: 0, pause: 250});
+            });
+        </script>
     </body>
 </html> 
 

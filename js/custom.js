@@ -1,19 +1,67 @@
-$(document).ready(function(){
-    var $root = $('html, body');
-    $('a').click(function() {
-        $root.animate({
-            scrollTop: $($.attr(this, 'href') ).offset().top
-        }, 500);
-        return false;
+(function ($) {
+  function typeString($target, str, cursor, delay, cb) {
+    $target.html(function (_, html) {
+      return html + str[cursor];
     });
-});
 
-$(document).scroll(function () {
-    var y = $(this).scrollTop();
-    if (y > 300) {
-        $('.bot').fadeIn();
-    } else {
-        $('.bot').fadeOut();
+    if (cursor < str.length - 1) {
+      setTimeout(function () {
+        typeString($target, str, cursor + 1, delay, cb);
+      }, delay);
     }
+    else {
+      cb();
+    }
+  }
 
-});
+  function deleteString($target, delay, cb) {
+    var length;
+
+    $target.html(function (_, html) {
+      length = html.length;
+      return html.substr(0, length - 1);
+    });
+
+    if (length > 1) {
+      setTimeout(function () {
+        deleteString($target, delay, cb);
+      }, delay);
+    }
+    else {
+      cb();
+    }
+  }
+
+  // jQuery hook
+  $.fn.extend({
+    teletype: function (opts) {
+      var settings = $.extend({}, $.teletype.defaults, opts);
+
+      return $(this).each(function () {
+        (function loop($tar, idx) {
+          // type
+          typeString($tar, settings.text[idx], 0, settings.delay, function () {
+            // delete
+            setTimeout(function () {
+              deleteString($tar, settings.delay, function () {
+                loop($tar, (idx + 1) % settings.text.length);
+              });
+            }, settings.pause);
+          });
+
+        }($(this), 0));
+      });
+    }
+  });
+
+  $.extend({
+    teletype: {
+      defaults: {
+        delay: 50,
+        pause: 3000,
+        text: []
+      }
+    }
+  });
+
+}(jQuery));
