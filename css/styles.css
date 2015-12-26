@@ -3,11 +3,11 @@
     padding-right: 20px;
     font-family: Montserrat, Helvetica, sans-serif;
     font-size: 5em;
-    
 }
 
 #profile {
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     display: absolute;
     text-align: center;
     border-radius: 50%; 
@@ -19,7 +19,6 @@
     margin-top: 5px;
     font-family: Montserrat, Helvetica, sans-serif;
     font-size: 0.7em;
-    font-size: 0.7vw;
     color: #777;
 }
 
@@ -32,7 +31,6 @@
 
 #nav-bar li {
     font-size: 1.3em;
-    font-size: 1.3vw;
     font-family: Helvetica, sans-serif;
     color: #EB5240;
     opacity: 0.65;
@@ -50,7 +48,6 @@
     font-family: Helvetica, sans-serif;
     list-style: none;
     font-size: 1.2em;
-    font-size: 1.2vw;
 }
 
 #contents_work li {
@@ -67,23 +64,20 @@
     opacity: 0.65;
 }
 
-#contents_work li .pull-right {
-    font-size: 0.9em;
-    font-size: 0.9vw;
+#contents_work li .small {
+    font-size: 0.75em;
     opacity: 0.70;
 }
 
 #contents_work span {
     font-family: Helvetica, sans-serif;
-    font-size: 1.5em;
-    font-size: 1.5vw;
+    font-size: 1.3em;
 }
 
 #contents_projects {
     font-family: Helvetica, sans-serif;
     list-style: none;
     font-size: 1.2em;
-    font-size: 1.2vw;
 }
 
 #contents_projects li {
@@ -99,7 +93,6 @@
 #contents_projects .media-body p {
     font-family: Helvetica, sans-serif;
     font-size: 1.1em;
-    font-size: 1.1vw;
 }
 
 .color-blue {
@@ -126,7 +119,6 @@
     font-style: italic;
     font-family: Helvetica, sans-serif;
     font-size: 1.1em;
-    font-size: 1.1vw;
 }
 
 .inline-list {
@@ -154,7 +146,7 @@
 
 p {
     font-family: Helvetica, sans-serif;
-    font-size: 1.5vw;
+    font-size: 1.3em;
     color: #777;
 }
 
@@ -184,4 +176,17 @@ body {
   .affix,.affix-top {
       position:fixed;
   }
+}
+
+@media (max-width: 992px) {
+    .inline-list, .col-md-6 {
+        display: absolute;
+        left: 0;
+        text-align: center;
+    }
+    #title {
+        display: absolute;
+        left: 0;
+        text-align: center;
+    }
 }
