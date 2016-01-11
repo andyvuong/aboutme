@@ -25,10 +25,10 @@
                 </div>
                 <div class="col-md-6">
                         <ul class="inline-list">
-                            <li><a href="#"><i class="fa fa-file-text fa-3x"></i><div>Resume</div></a></li>
+                            <li><a href="resume.pdf"><i class="fa fa-file-text fa-3x"></i><div>Resume</div></a></li>
                             <li><a href="https://github.com/andyvuong"><i class="fa fa-github fa-3x"></i><div>Github</div></a></li>
                             <li><a href="https://linkedin.com/in/vuongandy"><i class="fa fa-linkedin-square fa-3x"></i><div>LinkedIn</div></a></li>
-                            <li><a href="mailto:andy@andyvuong.me"><i class="fa fa-envelope-o fa-3x"></i><div>Email</div></a></li>
+                            <li><a href="mailto:avuong3@illinois.edu"><i class="fa fa-envelope-o fa-3x"></i><div>Email</div></a></li>
                         </ul>
                 </div>
             </div>
@@ -82,12 +82,31 @@
                         <li class="media">
                             <div class="media-left">
                                 <a>
+                                    <i class="fa fa-bug fa-1x"></i>
+                                    <!--<img class="media-object" src="..." alt="...">-->
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <h3 class="media-heading">Page Web <small><a href="http://pageweb.herokuapp.com/">[Deployment]</a> <a href="https://github.com/andyvuong/pageweb">[Github]</a> <a href=""></a></small></h3>
+                                <p class="description-text">A web crawler that generates visualizations of web pages and links within a particular domain.</p>
+                                <a data-toggle="collapse" href="#pagewebDesc" aria-expanded="false" aria-controls="pagewebDesc">[Read more...]</a>
+                                <div class="collapse" id="pagewebDesc">
+                                    <div class="panel-body">
+                                        <p>This is a data visualization application built using Node.js and D3.js. It is deployed using Heroku (free tier). The application begins a limited crawl of the internet from a single url that the user inputs and produces a node-link graph visualization of the crawled website. This project is part of my efforts to become a better JS developer. As such, more features will be added and refactored as I continue to dive into the language and learn the best code practices.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <div class="media-left">
+                                <a>
                                     <i class="fa fa-globe fa-1x"></i>
                                     <!--<img class="media-object" src="..." alt="...">-->
                                 </a>
                             </div>
                             <div class="media-body">
-                                <h3 class="media-heading">Hubble <small><a href="#">[Deployment]</a> <a href="https://github.com/andyvuong/hubble">[Github]</a> <a href="">[Blog Post]</a></small></h3>
+                                <h3 class="media-heading">Hubble <small><a href="#">[Deployment-in-Progress]</a> <a href="https://github.com/andyvuong/hubble">[Github]</a> <a href=""></a></small></h3>
                                 <p class="description-text">A Twitter data visualization web app. See the most recent tweets based on the current Twitter trends from across the globe and where those tweets originated from.</p>
                                 <a data-toggle="collapse" href="#hubbleDesc" aria-expanded="false" aria-controls="hubbleDesc">[Read more...]</a>
                                 <div class="collapse" id="hubbleDesc">
@@ -105,12 +124,12 @@
                                 </a>
                             </div>
                             <div class="media-body">
-                                <h3 class="media-heading">Safe Route Recommender <small><a href="#">[Deployment]</a> <a href="https://github.com/andyvuong/SafeRouteRecommender">[Github]</a> <a href="">[Blog Post]</a></small></h3>
+                                <h3 class="media-heading">Safe Route Recommender <small><a href="#">[Deployment-in-Progress]</a> <a href="https://github.com/andyvuong/SafeRouteRecommender">[Github]</a> <a href=""></a></small></h3>
                                 <p class="description-text">A web application that computes a statistically safe path to walk from one destination to another on the University of Illinois's campus. The route is based on collected crime data.</p>
                                 <a data-toggle="collapse" href="#safeDesc" aria-expanded="false" aria-controls="safeDesc">[Read more...]</a>
                                 <div class="collapse" id="safeDesc">
                                     <div class="panel-body">
-                                        <p>This is a route mapping web application built using NodeJs, Express, and the Google Maps API. Crime data for the Urbana-Champaign (Il) area is collected from a few different sources and conformed into a data object that it is stored in MongoDB. When a user inputs a origin and destination to the map, the data pulled from our database is pulled into an in-memory graph on the backend. The graph vertices represent street intersections and edges represent a path from one intersection to another. Each edge has a weight representing its danger based on the data. The path of least danger is returned to the user. See the readme on github to learn about how danger is calculated and more technical details such as how locations that are not on an intersection are represented in the graph.</p>
+                                        <p>This is a route mapping web application built using Node.js, Express, and the Google Maps API. Crime data for the Urbana-Champaign (Il) area is collected from a few different sources and conformed into a data object that it is stored in MongoDB. When a user inputs a origin and destination to the map, the data pulled from our database is pulled into an in-memory graph on the backend. The graph vertices represent street intersections and edges represent a path from one intersection to another. Each edge has a weight representing its danger based on the data. The path of least danger is returned to the user. See the readme on github to learn about how danger is calculated and more technical details such as how locations that are not on an intersection are represented in the graph.</p>
                                     </div>
                                 </div>
                             </div>
@@ -123,7 +142,7 @@
                                 </a>
                             </div>
                             <div class="media-body">
-                                <h3 class="media-heading">Touch Band <small><a href="#">[Deployment-in-Progress]</a> <a href="https://github.com/berwin7996/wild15">[Github]</a> <a href="">[Blog Post]</a></small></h3>
+                                <h3 class="media-heading">Touch Band <small><a href="#">[Deployment-in-Progress]</a> <a href="https://github.com/berwin7996/wild15">[Github]</a> <a href=""></a></small></h3>
                                 <p class="description-text">Play an instrument on a band... all through the internet. Join a network of other participants and play one of many available digital instruments. Create and save your sessions and share it with others so they can try it in a rockband-like game.</p>
                                 <a data-toggle="collapse" href="#bandDesc" aria-expanded="false" aria-controls="bandDesc">[Read more...]</a>
                                 <div class="collapse" id="bandDesc">
@@ -141,7 +160,7 @@
                                 </a>
                             </div>
                             <div class="media-body">
-                                <h3 class="media-heading">Lecture Insight <small><a href="#">[Deployment-in-Progress]</a> <a href="https://github.com/andyvuong">[Github]</a> <a href="">[Blog Post]</a></small></h3>
+                                <h3 class="media-heading">Lecture Insight <small><a href="#">[Deployment-in-Progress]</a> <a href="https://github.com/andyvuong">[Github]</a> <a href=""></a></small></h3>
                                 <p class="description-text">Watch lecture videos while having a handy set of tools that allow you to search for concepts mentioned in the video, study sections with generated summarizations and links to other resources, and the ability to create and share your own notes.</p>
                                 <a data-toggle="collapse" href="#lectureDesc" aria-expanded="false" aria-controls="lectureDesc">[Read more...]</a>
                                 <div class="collapse" id="lectureDesc">
