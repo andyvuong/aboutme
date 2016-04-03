@@ -1,192 +1,90 @@
-#title {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-family: Montserrat, Helvetica, sans-serif;
-    font-size: 5em;
-}
+/* line 1, ../_sass/_base.scss */
+h1, h3, h4, h5, h6, p, li, div, a {
+  font-family: "Fira Sans", sans-serif; }
 
-#profile {
-    margin-top: 5%;
-    margin-bottom: 5%;
-    display: absolute;
-    text-align: center;
-    border-radius: 50%; 
-    border: 1px solid black;
-    box-shadow: 0 0 1em black;
-}
-
-#footer {
-    margin-top: 5px;
-    font-family: Montserrat, Helvetica, sans-serif;
-    font-size: 0.7em;
-    color: #777;
-}
-
-#nav-bar {
-    display: relative;
-    padding-top: 2%;
-    padding-left: 1%;
-    text-align: right;
-}
-
-#nav-bar li {
-    font-size: 1.3em;
-    font-family: Helvetica, sans-serif;
-    color: #EB5240;
-    opacity: 0.65;
-}
-
-#break {
-    margin-top: 5%;
-}
-
-#contents_1 {
-    margin-top: 5%;
-}
-
-#contents_work {
-    font-family: Helvetica, sans-serif;
-    list-style: none;
-    font-size: 1.2em;
-}
-
-#contents_work li {
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-#contents_work li li {
-    color: #777;
-}
-
-#contents_work li a {
-    color: #EB5240;
-    opacity: 0.65;
-}
-
-#contents_work li .small {
-    font-size: 0.75em;
-    opacity: 0.70;
-}
-
-#contents_work span {
-    font-family: Helvetica, sans-serif;
-    font-size: 1.3em;
-}
-
-#contents_projects {
-    font-family: Helvetica, sans-serif;
-    list-style: none;
-    font-size: 1.2em;
-}
-
-#contents_projects li {
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-#contents_projects .media-body a {
-    color: #EB5240;
-    opacity: 0.65;
-}
-
-#contents_projects .media-body p {
-    font-family: Helvetica, sans-serif;
-    font-size: 1.1em;
-}
-
-.color-blue {
-    color: #23527c
-}
-
-.color-light-blue {
-    color: #90B6CB;
-}
-
-.color-red {
-    color: #EB5240;
-}
-
-.color-black {
-    color: #777;
-}
-
-.title-text {
-    font-family: Montserrat, Helvetica, sans-serif;
-}
-
-.description-text {
-    font-style: italic;
-    font-family: Helvetica, sans-serif;
-    font-size: 1.1em;
-}
-
-.inline-list {
-    padding-top: 20px;
-    padding-right: 20px;
-    display: absolute;
-    width: 100%;
-    text-align: right;
-    bottom: 0;
-}
-
-.inline-list li{
-    font-size: 1.15em;
-    display: inline-block;
-    padding-left: 3px;
-    padding-right: 3px;
-    text-align: center;
-    bottom: 0;
-}
-
-.row {
-    min-height: 100%;
-    padding-top: 10px;
-}
-
-p {
-    font-family: Helvetica, sans-serif;
-    font-size: 1.3em;
-    color: #777;
-}
-
-p a {
-    color: #EB5240;
-    opacity: 0.65;
-}
-
+/* line 5, ../_sass/_base.scss */
 body {
-    background-color: #FFFFFF;
-}
+  background: white;
+  width: 100%; }
 
-@media (min-width: 979px) {
-  #midCol.affix-top {
-      position:fixed;
-      width:265px;
-      margin-right:10px;  
-  }
-  
-  #midCol.affix {
-      position:static;
-      width:100%;
-  }
-}
+/* line 10, ../_sass/_base.scss */
+h2 {
+  color: #23527c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3em; }
 
-@media (min-width: 767px) {
-  .affix,.affix-top {
-      position:fixed;
-  }
-}
+/* line 16, ../_sass/_base.scss */
+hr {
+  margin: 1.5% 0 1.5% 0; }
 
-@media (max-width: 992px) {
-    .inline-list, .col-md-6 {
-        display: absolute;
-        left: 0;
-        text-align: center;
-    }
-    #title {
-        display: absolute;
-        left: 0;
-        text-align: center;
-    }
-}
+/* line 20, ../_sass/_base.scss */
+.container {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 0; }
+
+/* line 28, ../_sass/_base.scss */
+#header h1 {
+  color: #23527c;
+  font-family: "Montserrat", sans-serif;
+  font-size: 6em;
+  text-align: center; }
+/* line 35, ../_sass/_base.scss */
+#header .list-inline {
+  text-align: center;
+  padding: 3%; }
+
+/* line 42, ../_sass/_base.scss */
+#profile-img {
+  width: 79px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1px solid black;
+  box-shadow: 0 0 1em black; }
+
+/* line 52, ../_sass/_base.scss */
+#introduction span {
+  color: #EB5240; }
+/* line 56, ../_sass/_base.scss */
+#introduction p {
+  font-size: 1.10em; }
+/* line 60, ../_sass/_base.scss */
+#introduction a {
+  color: #EB5240;
+  opacity: 0.65; }
+/* line 65, ../_sass/_base.scss */
+#introduction a:hover {
+  color: #23527c; }
+
+/* line 71, ../_sass/_base.scss */
+#experience {
+  margin-top: 4%; }
+  /* line 73, ../_sass/_base.scss */
+  #experience ul {
+    padding-left: 0; }
+    /* line 76, ../_sass/_base.scss */
+    #experience ul li {
+      list-style: none;
+      margin: 4% 0 4% 0; }
+      /* line 80, ../_sass/_base.scss */
+      #experience ul li p {
+        padding-top: 10px; }
+  /* line 86, ../_sass/_base.scss */
+  #experience h3 {
+    margin-bottom: 1%; }
+  /* line 90, ../_sass/_base.scss */
+  #experience a {
+    color: #EB5240;
+    opacity: 0.65; }
+  /* line 95, ../_sass/_base.scss */
+  #experience a:hover {
+    color: #23527c; }
+
+/* line 100, ../_sass/_base.scss */
+#projects {
+  margin-top: 3%; }
+
+/* line 104, ../_sass/_base.scss */
+#footer {
+  padding-top: 1%; }
