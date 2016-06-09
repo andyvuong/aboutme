@@ -1,4 +1,5 @@
-aboutme
-=======
+# About Me
 
-Source for personal webpage.
+## Workflow:
+* Sass/Compass required
+* compass watch
