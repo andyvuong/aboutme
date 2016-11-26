@@ -19,8 +19,8 @@ hr {
 
 /* line 20, ../_sass/_base.scss */
 .container {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-bottom: 0; }
 
 /* line 28, ../_sass/_base.scss */
@@ -48,43 +48,62 @@ hr {
   color: #EB5240; }
 /* line 56, ../_sass/_base.scss */
 #introduction p {
-  font-size: 1.10em; }
-/* line 60, ../_sass/_base.scss */
+  font-size: 1.10em;
+  text-align: center; }
+/* line 61, ../_sass/_base.scss */
 #introduction a {
   color: #EB5240;
   opacity: 0.65; }
-/* line 65, ../_sass/_base.scss */
+/* line 66, ../_sass/_base.scss */
 #introduction a:hover {
   color: #23527c; }
 
-/* line 71, ../_sass/_base.scss */
+/* line 72, ../_sass/_base.scss */
+#mini-head {
+  text-align: center; }
+
+/* line 76, ../_sass/_base.scss */
 #experience {
+  text-align: center;
   margin-top: 4%; }
-  /* line 73, ../_sass/_base.scss */
+  /* line 79, ../_sass/_base.scss */
   #experience ul {
     padding-left: 0; }
-    /* line 76, ../_sass/_base.scss */
+    /* line 82, ../_sass/_base.scss */
     #experience ul li {
       list-style: none;
       margin: 4% 0 4% 0; }
-      /* line 80, ../_sass/_base.scss */
+      /* line 86, ../_sass/_base.scss */
       #experience ul li p {
         padding-top: 10px; }
-  /* line 86, ../_sass/_base.scss */
+  /* line 92, ../_sass/_base.scss */
+  #experience h2 {
+    text-align: center; }
+  /* line 96, ../_sass/_base.scss */
   #experience h3 {
     margin-bottom: 1%; }
-  /* line 90, ../_sass/_base.scss */
+  /* line 100, ../_sass/_base.scss */
   #experience a {
     color: #EB5240;
     opacity: 0.65; }
-  /* line 95, ../_sass/_base.scss */
+  /* line 105, ../_sass/_base.scss */
   #experience a:hover {
     color: #23527c; }
 
-/* line 100, ../_sass/_base.scss */
+/* line 112, ../_sass/_base.scss */
+#research h2 {
+  text-align: center; }
+/* line 116, ../_sass/_base.scss */
+#research ul {
+  text-align: center; }
+  /* line 118, ../_sass/_base.scss */
+  #research ul li {
+    list-style: none; }
+
+/* line 124, ../_sass/_base.scss */
 #projects {
   margin-top: 3%; }
 
-/* line 104, ../_sass/_base.scss */
+/* line 128, ../_sass/_base.scss */
 #footer {
   padding-top: 1%; }

@@ -18,8 +18,8 @@ hr {
 }
 
 .container {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 0;
 }
 
@@ -55,6 +55,7 @@ hr {
 
     p {
         font-size: 1.10em;
+        text-align: center;
     }
 
     a {
@@ -68,7 +69,12 @@ hr {
 
 }
 
+#mini-head {
+    text-align: center;
+}
+
 #experience {
+    text-align: center;
     margin-top: 4%;
     ul {
         padding-left: 0;
@@ -83,6 +89,10 @@ hr {
         }
     }
 
+    h2 {
+        text-align: center;
+    }
+
     h3 {
         margin-bottom: 1%;
     }
@@ -95,6 +105,20 @@ hr {
     a:hover {
         color: $color-blue;
     }
+}
+
+#research {
+
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        text-align: center;
+        li {
+            list-style: none;
+        }
+    }    
 }
 
 #projects {
