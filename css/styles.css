@@ -5,105 +5,48 @@ h1, h3, h4, h5, h6, p, li, div, a {
 /* line 5, ../_sass/_base.scss */
 body {
   background: white;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
-/* line 10, ../_sass/_base.scss */
-h2 {
-  color: #23527c;
-  font-family: "Montserrat", sans-serif;
-  font-size: 3em; }
+/* line 11, ../_sass/_base.scss */
+header {
+  padding-top: 1%;
+  padding-bottom: 1%; }
+  /* line 15, ../_sass/_base.scss */
+  header .list-inline {
+    text-align: center;
+    padding: 2%; }
+  /* line 20, ../_sass/_base.scss */
+  header h1 {
+    text-align: center; }
 
-/* line 16, ../_sass/_base.scss */
-hr {
-  margin: 1.5% 0 1.5% 0; }
-
-/* line 20, ../_sass/_base.scss */
-.container {
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 0; }
-
-/* line 28, ../_sass/_base.scss */
-#header h1 {
-  color: #23527c;
-  font-family: "Montserrat", sans-serif;
-  font-size: 6em;
+/* line 25, ../_sass/_base.scss */
+footer {
   text-align: center; }
-/* line 35, ../_sass/_base.scss */
-#header .list-inline {
-  text-align: center;
-  padding: 3%; }
 
-/* line 42, ../_sass/_base.scss */
+/* line 29, ../_sass/_base.scss */
+hr {
+  width: 70%;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+
+/* line 35, ../_sass/_base.scss */
 #profile-img {
   width: 123px;
   height: 154px;
   margin: 0 auto;
   border-radius: 50%;
   border: 1px solid black;
-  box-shadow: 0 0 1em black; }
-
-/* line 52, ../_sass/_base.scss */
-#introduction span {
-  color: #EB5240; }
-/* line 56, ../_sass/_base.scss */
-#introduction p {
-  font-size: 1.10em;
-  text-align: center; }
-/* line 61, ../_sass/_base.scss */
-#introduction a {
-  color: #EB5240;
-  opacity: 0.65; }
-/* line 66, ../_sass/_base.scss */
-#introduction a:hover {
-  color: #23527c; }
-
-/* line 72, ../_sass/_base.scss */
-#mini-head {
-  text-align: center; }
-
-/* line 76, ../_sass/_base.scss */
-#experience {
-  text-align: center;
-  margin-top: 4%; }
-  /* line 79, ../_sass/_base.scss */
-  #experience ul {
-    padding-left: 0; }
-    /* line 82, ../_sass/_base.scss */
-    #experience ul li {
-      list-style: none;
-      margin: 4% 0 4% 0; }
-      /* line 86, ../_sass/_base.scss */
-      #experience ul li p {
-        padding-top: 10px; }
-  /* line 92, ../_sass/_base.scss */
-  #experience h2 {
-    text-align: center; }
-  /* line 96, ../_sass/_base.scss */
-  #experience h3 {
-    margin-bottom: 1%; }
-  /* line 100, ../_sass/_base.scss */
-  #experience a {
-    color: #EB5240;
-    opacity: 0.65; }
-  /* line 105, ../_sass/_base.scss */
-  #experience a:hover {
-    color: #23527c; }
-
-/* line 112, ../_sass/_base.scss */
-#research h2 {
-  text-align: center; }
-/* line 116, ../_sass/_base.scss */
-#research ul {
-  text-align: center; }
-  /* line 118, ../_sass/_base.scss */
-  #research ul li {
-    list-style: none; }
-
-/* line 124, ../_sass/_base.scss */
-#projects {
+  box-shadow: 0 0 1em black;
   margin-top: 3%; }
 
-/* line 128, ../_sass/_base.scss */
-#footer {
-  padding-top: 1%; }
+/* line 45, ../_sass/_base.scss */
+#main {
+  padding-left: 20%;
+  padding-right: 20%; }
+  /* line 49, ../_sass/_base.scss */
+  #main #intro {
+    text-align: center; }
+  /* line 53, ../_sass/_base.scss */
+  #main a {
+    color: blue; }
